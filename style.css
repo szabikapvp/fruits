@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(-45deg,rgba(104, 125, 67, 1) 0%, rgba(223, 245, 138, 1) 100%);
+    background-attachment: fixed;
+}
+
+.full-rounded {
+    border-radius: 1rem;
+}

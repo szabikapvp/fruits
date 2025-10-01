@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déli gyümölcsök</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data_fruits.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+    <div class="container min-w-screen flex flex-col items-center p-4">
+
+        <header class="h-32 flex justify-center items-center">
+            <h1 class="font-bold text-4xl text-lime-900">Déli gyümölcsök</h1>
+        </header>
+        <main class="flex flex-col justify-center items-center gap-8">
+            <div class="flex flex-col w-96 gap-2">
+                <span>Neked melyik a kedvenced?</span>
+                <select class="bg-lime-100 p-2 rounded-lg border-lime-600 border-2" id="fruit-select" onchange="update();">
+                    <option value="">Válassz...</option>
+                </select>
+            </div>
+            <div class="flex max-[600px]:flex-col max-w-[72rem]">
+                <img id="fruit-img" src="./img/fruits.webp" class="object-cover rounded-tl-2xl min-[600px]:rounded-bl-2xl max-[600px]:rounded-tr-2xl full-rounded">
+                <div class="desc-container bg-white p-8 hidden rounded-br-2xl min-[600px]:rounded-tr-2xl max-[600px]:rounded-bl-2xl">
+                    <h2 id="fruit-name" class="text-2xl font-bold mt-4 mb-8 text-lime-900"></h2>
+                    <p id="text"></p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>
